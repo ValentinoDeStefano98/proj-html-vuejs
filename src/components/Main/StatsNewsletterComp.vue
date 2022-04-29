@@ -1,16 +1,14 @@
 <template>
   <div>
-    <h2>Footer</h2>
+    <h4>Stats + Newsletter Section</h4>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'FooterComp',
+  name: 'StatsNewsletterComp',
 
 }
 </script>
 
 <style scoped lang="scss">
-
-</style>

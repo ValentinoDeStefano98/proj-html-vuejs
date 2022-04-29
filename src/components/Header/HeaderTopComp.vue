@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h2>Footer</h2>
+    HeaderTop
   </div>
 </template>
 
 <script>
 export default {
-  name: 'FooterComp',
+  name: 'HeaderTopComp',
 
 }
 </script>

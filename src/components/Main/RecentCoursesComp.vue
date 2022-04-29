@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h2>Footer</h2>
+    <h4>Recent Courses Section</h4>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'FooterComp',
+  name: 'RecentCoursesComp',
 
 }
 </script>
