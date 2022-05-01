@@ -1,6 +1,6 @@
 <template>
   <div>
-    HeaderBottom
+    <h4>HeaderBottom</h4>
   </div>
 </template>
 

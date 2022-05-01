@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h2>Header</h2>
     <HeaderTopComp/>
     <HeaderBottomComp/>
   </div>
