@@ -2,10 +2,10 @@
   <div class="big-container py-5">
     <div class="container py-5">
       <div class="row">
-        <div class="col-6">
+        <div class="col-6 text-start">
           <h2>Limitless learning, more possibilities</h2>
-          <p>Online courses open the opportunity for learning to almost anyone regardless of their scheduling commitments.</p>
-          <button>Read more</button>
+          <p class="py-3">Online courses open the opportunity for learning to almost anyone regardless of their scheduling commitments.</p>
+          <button class="btn btn-primary">Read more</button>
         </div>
         <div class="col-6">
         </div>
@@ -34,5 +34,9 @@ export default {
 .container{
   width: 65%;
   margin: 0 auto;
+}
+
+.btn{
+  border-radius: 30px;
 }
 </style>
