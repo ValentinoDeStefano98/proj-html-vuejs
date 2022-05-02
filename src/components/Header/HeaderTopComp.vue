@@ -8,6 +8,13 @@
               <div class="">
                 <select id="disabledSelect" class="form-select w-25">
                   <option>English</option>
+                  <option>Italian</option>
+                  <option>Mandarin</option>
+                  <option>Hindi</option>
+                  <option>Spanish</option>
+                  <option>French</option>
+                  <option>Arabic</option>
+                  <option>Russian</option>
                 </select>
               </div>
             </fieldset>
