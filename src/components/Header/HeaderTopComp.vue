@@ -1,7 +1,7 @@
 <template>
   <div class="border-bottom">
     <div class="container">
-      <div class="row row-cols-3 d-flex align-items-center py-2">
+      <div class="row row-cols-3 d-flex align-items-center py-3">
         <div class="col-4">
           <form>
             <fieldset>
@@ -13,7 +13,7 @@
             </fieldset>
           </form>
         </div>
-        <div class="col-6 d-flex align-items-center">
+        <div class="col-6 d-flex align-items-center justify-content-end">
           <ul class="d-flex menu-list m-0">
             <li class="me-3">Courses</li>
             <li class="me-3">Zoom</li>
@@ -24,8 +24,12 @@
             <li class="me-3">Demos</li>
           </ul>
         </div>
-        <div class="col-2">
-          icons
+        <div class="col-2 text-end">
+          <i class="fa-brands fa-twitter me-3"></i>
+          <i class="fa-brands fa-instagram me-3"></i>
+          <i class="fa-brands fa-git me-3"></i>
+          <i class="fa-brands fa-linkedin me-3"></i>
+          <i class="fa-brands fa-pinterest"></i>
         </div>
       </div> 
     </div>
