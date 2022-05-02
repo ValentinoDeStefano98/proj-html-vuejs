@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h4>Jumbo Section</h4>
     <JumboTop/>
     <JumboMid/>
     <JumboBottom/>
