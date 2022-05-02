@@ -37,33 +37,279 @@
         </nav>
       </div>
       <div class="container">
-        <div class="row">
+        <div class="row py-4">
           <div class="col-2">
-            <div class="card" style="width: 18rem;">
+            <div class="card">
               <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
               <div class="card-body">
+                <div class="text-start">
+                  <span>Apache ></span>               
                 <h6 class="card-title">Web Coding and Apache Basics</h6>
+                </div>
                 <hr>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="container p-0 m-0">
+                  <div class="row">
+                    <div class="col-6 text-start">
+                      <span>6 hours</span>
+                    </div>
+                    <div class="col-6 text-end">
+                      <span>Free</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-2">
-
+            <div class="card">
+              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="text-start">
+                  <span>Apache ></span>               
+                <h6 class="card-title">Web Coding and Apache Basics</h6>
+                </div>
+                <hr>
+                <div class="container p-0 m-0">
+                  <div class="row">
+                    <div class="col-6 text-start">
+                      <span>6 hours</span>
+                    </div>
+                    <div class="col-6 text-end">
+                      <span>Free</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-2">
-
+            <div class="card">
+              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="text-start">
+                  <span>Apache ></span>               
+                <h6 class="card-title">Web Coding and Apache Basics</h6>
+                </div>
+                <hr>
+                <div class="container p-0 m-0">
+                  <div class="row">
+                    <div class="col-6 text-start">
+                      <span>6 hours</span>
+                    </div>
+                    <div class="col-6 text-end">
+                      <span>Free</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-2">
-
+            <div class="card">
+              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="text-start">
+                  <span>Apache ></span>               
+                <h6 class="card-title">Web Coding and Apache Basics</h6>
+                </div>
+                <hr>
+                <div class="container p-0 m-0">
+                  <div class="row">
+                    <div class="col-6 text-start">
+                      <span>6 hours</span>
+                    </div>
+                    <div class="col-6 text-end">
+                      <span>Free</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-2">
-
+            <div class="card">
+              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="text-start">
+                  <span>Apache ></span>               
+                <h6 class="card-title">Web Coding and Apache Basics</h6>
+                </div>
+                <hr>
+                <div class="container p-0 m-0">
+                  <div class="row">
+                    <div class="col-6 text-start">
+                      <span>6 hours</span>
+                    </div>
+                    <div class="col-6 text-end">
+                      <span>Free</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-2">
-
+            <div class="card">
+              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="text-start">
+                  <span>Apache ></span>               
+                <h6 class="card-title">Web Coding and Apache Basics</h6>
+                </div>
+                <hr>
+                <div class="container p-0 m-0">
+                  <div class="row">
+                    <div class="col-6 text-start">
+                      <span>6 hours</span>
+                    </div>
+                    <div class="col-6 text-end">
+                      <span>Free</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <div class="card">
+              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="text-start">
+                  <span>Apache ></span>               
+                <h6 class="card-title">Web Coding and Apache Basics</h6>
+                </div>
+                <hr>
+                <div class="container p-0 m-0">
+                  <div class="row">
+                    <div class="col-6 text-start">
+                      <span>6 hours</span>
+                    </div>
+                    <div class="col-6 text-end">
+                      <span>Free</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card">
+              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="text-start">
+                  <span>Apache ></span>               
+                <h6 class="card-title">Web Coding and Apache Basics</h6>
+                </div>
+                <hr>
+                <div class="container p-0 m-0">
+                  <div class="row">
+                    <div class="col-6 text-start">
+                      <span>6 hours</span>
+                    </div>
+                    <div class="col-6 text-end">
+                      <span>Free</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card">
+              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="text-start">
+                  <span>Apache ></span>               
+                <h6 class="card-title">Web Coding and Apache Basics</h6>
+                </div>
+                <hr>
+                <div class="container p-0 m-0">
+                  <div class="row">
+                    <div class="col-6 text-start">
+                      <span>6 hours</span>
+                    </div>
+                    <div class="col-6 text-end">
+                      <span>Free</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card">
+              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="text-start">
+                  <span>Apache ></span>               
+                <h6 class="card-title">Web Coding and Apache Basics</h6>
+                </div>
+                <hr>
+                <div class="container p-0 m-0">
+                  <div class="row">
+                    <div class="col-6 text-start">
+                      <span>6 hours</span>
+                    </div>
+                    <div class="col-6 text-end">
+                      <span>Free</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card">
+              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="text-start">
+                  <span>Apache ></span>               
+                <h6 class="card-title">Web Coding and Apache Basics</h6>
+                </div>
+                <hr>
+                <div class="container p-0 m-0">
+                  <div class="row">
+                    <div class="col-6 text-start">
+                      <span>6 hours</span>
+                    </div>
+                    <div class="col-6 text-end">
+                      <span>Free</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card">
+              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="text-start">
+                  <span>Apache ></span>               
+                <h6 class="card-title">Web Coding and Apache Basics</h6>
+                </div>
+                <hr>
+                <div class="container p-0 m-0">
+                  <div class="row">
+                    <div class="col-6 text-start">
+                      <span>6 hours</span>
+                    </div>
+                    <div class="col-6 text-end">
+                      <span>Free</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="py-4">
+        <button>Show all</button>
       </div>
     </div>
     
