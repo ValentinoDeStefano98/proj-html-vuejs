@@ -9,27 +9,9 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" v-for="(elem, index) in arrayCategories" :key="index">
                 <li class="nav-item">
-                  <a class="nav-link active btn btn-light" aria-current="page" href="#">All Categories</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active text-primary" aria-current="page" href="#">Art</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active text-primary" aria-current="page" href="#">Exercise</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active text-primary" aria-current="page" href="#">Material Design</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active text-primary" aria-current="page" href="#">Music</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active text-primary" aria-current="page" href="#">Photography</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active text-primary" aria-current="page" href="#">Software Development</a>
+                  <a v-bind:class="{ 'text-secondary' : elem.active }" class="nav-link text-primary" aria-current="page" href="#">{{ elem.name }}</a>
                 </li>
               </ul>
             </div>
@@ -38,288 +20,213 @@
       </div>
       <div class="container">
         <div class="row py-4">
-          <div class="col-2">
+          <div class="col-2" v-for="(elem, index) in arrayCard" :key="index">
             <div class="card">
               <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
               <div class="card-body">
                 <div class="text-start">
-                  <span class="text-secondary size">Apache ></span>               
-                <h6 class="card-title pt-2">Web Coding and Apache Basics</h6>
+                  <span class="text-secondary size">{{elem.category}}</span>               
+                <h6 class="card-title pt-2">{{elem.name}}</h6>
                 </div>
                 <hr>
                 <div class="container p-0 m-0">
                   <div class="row">
-                    <div class="col-6 text-start size">
-                      <span class="size"><i class="fa-regular fa-clock"></i>6 hours</span>
+                    <div class="col-8 text-start size">
+                      <span class="my-3" v-if="elem.rating !== ''">
+                            <i class="fa-solid fa-star" :class="elem.rating >= 1 ? 'text-warning' : ''"></i>
+                            <i class="fa-solid fa-star" :class="elem.rating >= 2 ? 'text-warning' : ''"></i>
+                            <i class="fa-solid fa-star" :class="elem.rating >= 3 ? 'text-warning' : ''"></i>
+                            <i class="fa-solid fa-star" :class="elem.rating >= 4 ? 'text-warning' : ''"></i>
+                            <i class="fa-solid fa-star" :class="elem.rating == 5 ? 'text-warning' : ''"></i>
+                            {{elem.rating}} 
+                      </span>
+                      <span v-if="elem.time != ''" class="size"><i class="fa-regular fa-clock"></i> {{ elem.time }}</span>
                     </div>
-                    <div class="col-6 text-end size">
-                      <span>Free</span>
+                    <div class="col-4 text-end size">                    
+                      <span v-bind:class="{discounted : elem.discounted == true}" class="fw-bold">{{elem.originalPrice}}</span>
+                      <div v-if="elem.discount !== ''">{{ elem.discount }}</div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-2">
-            <div class="card">
-              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <div class="text-start">
-                  <span class="text-secondary size">Art ></span>               
-                <h6 class="card-title pt-2">Web Coding and Apache Basics</h6>
-                </div>
-                <hr>
-                <div class="container p-0 m-0">
-                  <div class="row">
-                    <div class="col-6 text-start size">
-                      <span class="size"><i class="fa-regular fa-clock"></i>6 hours</span>
-                    </div>
-                    <div class="col-6 text-end size">
-                      <span>Free</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="card">
-              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <div class="text-start">
-                  <span class="text-secondary size">Software Development ></span>               
-                <h6 class="card-title pt-2">Web Coding and Apache Basics</h6>
-                </div>
-                <hr>
-                <div class="container p-0 m-0">
-                  <div class="row">
-                    <div class="col-6 text-start size">
-                      <span class="size"><i class="fa-regular fa-clock"></i>6 hours</span>
-                    </div>
-                    <div class="col-6 text-end size">
-                      <span>Free</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="card">
-              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <div class="text-start">
-                  <span class="text-secondary size">Electronic ></span>              
-                <h6 class="card-title pt-2">Web Coding and Apache Basics</h6>
-                </div>
-                <hr>
-                <div class="container p-0 m-0">
-                  <div class="row">
-                    <div class="col-6 text-start size">
-                      <span class="size"><i class="fa-regular fa-clock"></i>6 hours</span>
-                    </div>
-                    <div class="col-6 text-end size">
-                      <span>Free</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="card">
-              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <div class="text-start">
-                  <span class="text-secondary size">Communication ></span>               
-                <h6 class="card-title pt-2">Web Coding and Apache Basics</h6>
-                </div>
-                <hr>
-                <div class="container p-0 m-0">
-                  <div class="row">
-                    <div class="col-6 text-start size">
-                      <span class="size"><i class="fa-regular fa-clock"></i>6 hours</span>
-                    </div>
-                    <div class="col-6 text-end size">
-                      <span>Free</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="card">
-              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <div class="text-start">
-                  <span class="text-secondary size">Art ></span>              
-                <h6 class="card-title pt-2">Web Coding and Apache Basics</h6>
-                </div>
-                <hr>
-                <div class="container p-0 m-0">
-                  <div class="row">
-                    <div class="col-6 text-start size">
-                      <span class="size"><i class="fa-regular fa-clock"></i>6 hours</span>
-                    </div>
-                    <div class="col-6 text-end size">
-                      <span>Free</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-        
-        </div>
-        <div class="row">
-          <div class="col-2">
-            <div class="card">
-              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <div class="text-start">
-                  <span class="text-secondary size">Bicycling ></span>               
-                <h6 class="card-title pt-2">Web Coding and Apache Basics</h6>
-                </div>
-                <hr>
-                <div class="container p-0 m-0">
-                  <div class="row">
-                    <div class="col-6 text-start size">
-                      <span class="size"><i class="fa-regular fa-clock"></i>6 hours</span>
-                    </div>
-                    <div class="col-6 text-end size">
-                      <span>Free</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="card">
-              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <div class="text-start">
-                  <span class="text-secondary size">Documentary ></span>               
-                <h6 class="card-title pt-2">Web Coding and Apache Basics</h6>
-                </div>
-                <hr>
-                <div class="container p-0 m-0">
-                  <div class="row">
-                    <div class="col-6 text-start size">
-                      <span class="size"><i class="fa-regular fa-clock"></i>6 hours</span>
-                    </div>
-                    <div class="col-6 text-end size">
-                      <span>Free</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="card">
-              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <div class="text-start">
-                  <span class="text-secondary size">Art ></span>              
-                <h6 class="card-title pt-2">Web Coding and Apache Basics</h6>
-                </div>
-                <hr>
-                <div class="container p-0 m-0">
-                  <div class="row">
-                    <div class="col-6 text-start size">
-                      <span class="size"><i class="fa-regular fa-clock"></i>6 hours</span>
-                    </div>
-                    <div class="col-6 text-end size">
-                      <span>Free</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="card">
-              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <div class="text-start">
-                  <span class="text-secondary size">Nvidia ></span>               
-                <h6 class="card-title pt-2">Web Coding and Apache Basics</h6>
-                </div>
-                <hr>
-                <div class="container p-0 m-0">
-                  <div class="row">
-                    <div class="col-6 text-start size">
-                      <span class="size"><i class="fa-regular fa-clock"></i>6 hours</span>
-                    </div>
-                    <div class="col-6 text-end size">
-                      <span>Free</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="card">
-              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <div class="text-start">
-                  <span class="text-secondary size">Art ></span>               
-                <h6 class="card-title pt-2">Web Coding and Apache Basics</h6>
-                </div>
-                <hr>
-                <div class="container p-0 m-0">
-                  <div class="row">
-                    <div class="col-6 text-start size">
-                      <span class="size"><i class="fa-regular fa-clock"></i>6 hours</span>
-                    </div>
-                    <div class="col-6 text-end size">
-                      <span>Free</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="card">
-              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <div class="text-start">
-                  <span class="text-secondary size">Software Development ></span>               
-                <h6 class="card-title pt-2">Web Coding and Apache Basics</h6>
-                </div>
-                <hr>
-                <div class="container p-0 m-0">
-                  <div class="row">
-                    <div class="col-6 text-start size">
-                      <span class="size"><i class="fa-regular fa-clock"></i>6 hours</span>
-                    </div>
-                    <div class="col-6 text-end size">
-                      <span>Free</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          </div>        
         </div>
       </div>
-      <div class="py-4">
-        <button class="text-uppercase btn btn-primary my-5">Show all</button>
-      </div>
-    </div>
-    
+    </div>   
   </div>
 </template>
 
 <script>
 export default {
   name: 'RecentCoursesComp',
-
+  data() {
+    return {
+      arrayCategories: [{
+            "name": "All Categories",
+            "link": "#",
+            "active": true
+        },
+        {
+            "name": "Art",
+            "link": "#",
+        },
+        {
+            "name": "Exercise",
+            "link": "#",
+        },
+        {
+            "name": "Material Design",
+            "link": "#",
+        },
+        {
+            "name": "Music",
+            "link": "#",
+        },
+        {
+            "name": "Photography",
+            "link": "#",
+        },
+        {
+            "name": "Software Development",
+            "link": "#",
+        },
+        ],
+        arrayCard: [{
+            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "category": "Apache >",
+            "name": "Web Coding and Apache Basics",
+            "time": "6 hours",
+            "rating": "",
+            "originalPrice": "Free",
+            "discount": "",
+            "discounted": false,
+            "link": "#",
+        },
+        {
+            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "category": "Art >",
+            "name": "Real Things Art Painting by Jason Ni",
+            "time": "6 hours",
+            "rating": "",
+            "originalPrice": "$60",
+            "discount": "$45",
+            "discounted": true,
+            "link": "#",
+        },
+        {
+            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "category": "Software Development >",
+            "name": "Basics of MasterStudy",
+            "time": "",
+            "rating": "5",
+            "originalPrice": "Free",
+            "discount": "",
+            "discounted": false,
+            "link": "#",
+        },
+        {
+            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "category": "Electronic >",
+            "name": "How to be a DJ? Make Electronic Music",
+            "time": "",
+            "rating": "5",
+            "originalPrice": "$59",
+            "discount": "$49",
+            "discounted": true,
+            "link": "#",
+        },
+        {
+            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "category": "Communication >",
+            "name": "Design Instrument for Communication",
+            "time": "6 hours",
+            "rating": "",
+            "originalPrice": "",
+            "discount": "",
+            "discounted": false,
+            "link": "#",
+        },
+        {
+            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "category": "Art >",
+            "name": "Make your Concept Right and Beautiful",
+            "time": "6 hours",
+            "rating": "",
+            "originalPrice": "$70",
+            "discount": "",
+            "discounted": false,
+            "link": "#",
+        },
+        {
+            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "category": "Bicycling >",
+            "name": "Road Bike Manual or How to Be a Champion.",
+            "time": "6 hours",
+            "rating": "",
+            "originalPrice": "$20",
+            "discount": "",
+            "discounted": false,
+            "link": "#",
+        },
+        {
+            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "category": "Documentary >",
+            "name": "How to Make Beautiful Landscape photos?",
+            "time": "6 hours",
+            "rating": "",
+            "originalPrice": "$60",
+            "discount": "",
+            "discounted": false,
+            "link": "#",
+        },
+        {
+            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "category": "Art >",
+            "name": "Let's paint Van Gogh's Starry Night",
+            "time": "6 hours",
+            "rating": "",
+            "originalPrice": "$79",
+            "discount": "",
+            "discounted": false,
+            "link": "#",
+        },
+        {
+            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "category": "Nvidia >",
+            "name": "Nvidia and UE4 Technologies Practice",
+            "time": "",
+            "rating": "5",
+            "originalPrice": "Free",
+            "discount": "",
+            "discounted": false,
+            "link": "#",
+        },
+        {
+            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "category": "Art >",
+            "name": "How to Work with Legendary RED camera?",
+            "time": "6 hours",
+            "rating": "",
+            "originalPrice": "Free",
+            "discount": "",
+            "discounted": false,
+            "link": "#",
+        },
+        {
+            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "category": "Software Development >",
+            "name": "MasterStudy Mobile LMS App",
+            "time": "2 hours",
+            "rating": "",
+            "originalPrice": "Free",
+            "discount": "",
+            "discounted": false,
+            "link": "#",
+        },
+        ],
+    }
+    }
 }
 </script>
 
@@ -335,5 +242,14 @@ export default {
 
 .size{
   font-size: 0.8em;
+}
+
+.active{
+  color: grey;
+}
+
+.discounted{
+  color: grey;
+  text-decoration: line-through;
 }
 </style>

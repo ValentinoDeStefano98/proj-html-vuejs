@@ -22,7 +22,7 @@
       </div>
       <div class="col-3 text-end">
         <span class="size me-3 text-primary"> <i class="fa-regular fa-user me-1"></i>Log in</span>
-        <button class="btn btn-primary button-signup me-4 px-4 text-uppercase">Sign up</button>
+        <button class="btn btn-primary button-signup me-4 px-4 text-uppercase hover">Sign up</button>
         <span class="text-primary"><i class="fa-regular fa-bookmark"></i></span>
       </div>
     </div>
@@ -56,5 +56,9 @@ button{
 
 .button-signup{
   border-radius: 30px;
+}
+
+.hover:hover{
+  background-color: #365182;
 }
 </style>

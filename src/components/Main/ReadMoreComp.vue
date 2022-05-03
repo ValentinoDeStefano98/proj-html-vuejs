@@ -5,7 +5,7 @@
         <div class="col-6 text-start">
           <h2>Limitless learning, more possibilities</h2>
           <p class="py-3">Online courses open the opportunity for learning to almost anyone regardless of their scheduling commitments.</p>
-          <button class="btn btn-primary">Read more</button>
+          <button class="btn btn-primary text-uppercase px-4">Read more</button>
         </div>
         <div class="col-6">
         </div>

@@ -5,7 +5,7 @@
         <div class="col-4">
           <form>
             <fieldset>
-              <div class="">
+              <div class="mt-3">
                 <select id="disabledSelect" class="form-select w-25">
                   <option>English</option>
                   <option>Italian</option>
@@ -26,7 +26,7 @@
             <li class="me-3 lh-1"> {{ elem.name }} </li>
           </ul>
         </div>
-        <div class="col-2 text-end">
+        <div class="col-2 text-end mt-3">
           <i class="fa-brands fa-twitter me-3"></i>
           <i class="fa-brands fa-instagram me-3"></i>
           <i class="fa-brands fa-git me-3"></i>
