@@ -20,9 +20,9 @@
       </div>
       <div class="container">
         <div class="row py-4">
-          <div class="col-2" v-for="(elem, index) in arrayCard" :key="index">
+          <div class="col-2 mb-4" v-for="(elem, index) in arrayCard" :key="index">
             <div class="card">
-              <img src="./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg" class="card-img-top" alt="...">
+              <img :src="`${elem.poster}`" class="card-img-top" alt="...">
               <div class="card-body">
                 <div class="text-start">
                   <span class="text-secondary size">{{elem.category}}</span>               
@@ -44,7 +44,7 @@
                     </div>
                     <div class="col-4 text-end size">                    
                       <span v-bind:class="{discounted : elem.discounted == true}" class="fw-bold">{{elem.originalPrice}}</span>
-                      <div v-if="elem.discount !== ''">{{ elem.discount }}</div>
+                      <div class="fw-bold" v-if="elem.discount !== ''">{{ elem.discount }}</div>
                     </div>
                   </div>
                 </div>
@@ -58,6 +58,20 @@
 </template>
 
 <script>
+import image1 from './../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg';
+import image2 from './../../assets/img/cat_2-544x322.jpg';
+import image3 from './../../assets/img/course-preview-544x322.jpg';
+import image4 from './../../assets/img/photo-1496307042754-b4aa456c4a2d-544x322.jpeg';
+import image5 from './../../assets/img/photo-1416339134316-0e91dc9ded92-scaled-544x322.jpeg';
+import image6 from './../../assets/img/cathryn-lavery-67852-unsplash-544x322.jpg';
+import image7 from './../../assets/img/photo-1475452779376-caebfb988090-544x322.jpeg';
+import image8 from './../../assets/img/cristian-grecu-762012-unsplash-min-scaled-544x322.jpg';
+import image9 from './../../assets/img/landscape-544x322.jpg';
+import image10 from './../../assets/img/12345-1-272x161.png';
+import image11 from './../../assets/img/jakob-owens-198234-unsplash-min-1-544x322.png';
+import image12 from './../../assets/img/promo_tf-544x322.jpg';
+
+
 export default {
   name: 'RecentCoursesComp',
   data() {
@@ -93,7 +107,7 @@ export default {
         },
         ],
         arrayCard: [{
-            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "poster": image1,
             "category": "Apache >",
             "name": "Web Coding and Apache Basics",
             "time": "6 hours",
@@ -104,7 +118,7 @@ export default {
             "link": "#",
         },
         {
-            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "poster": image2,
             "category": "Art >",
             "name": "Real Things Art Painting by Jason Ni",
             "time": "6 hours",
@@ -115,7 +129,7 @@ export default {
             "link": "#",
         },
         {
-            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "poster": image3,
             "category": "Software Development >",
             "name": "Basics of MasterStudy",
             "time": "",
@@ -126,7 +140,7 @@ export default {
             "link": "#",
         },
         {
-            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "poster": image4,
             "category": "Electronic >",
             "name": "How to be a DJ? Make Electronic Music",
             "time": "",
@@ -137,7 +151,7 @@ export default {
             "link": "#",
         },
         {
-            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "poster": image5,
             "category": "Communication >",
             "name": "Design Instrument for Communication",
             "time": "6 hours",
@@ -148,7 +162,7 @@ export default {
             "link": "#",
         },
         {
-            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "poster": image6,
             "category": "Art >",
             "name": "Make your Concept Right and Beautiful",
             "time": "6 hours",
@@ -159,7 +173,7 @@ export default {
             "link": "#",
         },
         {
-            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "poster": image7,
             "category": "Bicycling >",
             "name": "Road Bike Manual or How to Be a Champion.",
             "time": "6 hours",
@@ -170,7 +184,7 @@ export default {
             "link": "#",
         },
         {
-            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "poster": image8,
             "category": "Documentary >",
             "name": "How to Make Beautiful Landscape photos?",
             "time": "6 hours",
@@ -181,7 +195,7 @@ export default {
             "link": "#",
         },
         {
-            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "poster": image9,
             "category": "Art >",
             "name": "Let's paint Van Gogh's Starry Night",
             "time": "6 hours",
@@ -192,7 +206,7 @@ export default {
             "link": "#",
         },
         {
-            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "poster": image10,
             "category": "Nvidia >",
             "name": "Nvidia and UE4 Technologies Practice",
             "time": "",
@@ -203,7 +217,7 @@ export default {
             "link": "#",
         },
         {
-            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "poster": image11,
             "category": "Art >",
             "name": "How to Work with Legendary RED camera?",
             "time": "6 hours",
@@ -214,7 +228,7 @@ export default {
             "link": "#",
         },
         {
-            "poster": "./../../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg",
+            "poster": image12,
             "category": "Software Development >",
             "name": "MasterStudy Mobile LMS App",
             "time": "2 hours",
@@ -251,5 +265,9 @@ export default {
 .discounted{
   color: grey;
   text-decoration: line-through;
+}
+
+.card{
+  height: 290px;
 }
 </style>
