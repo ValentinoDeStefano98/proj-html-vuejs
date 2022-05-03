@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-3 text-start">
         <h5>About</h5>
-        <p class="size text-secondary"><span class="text-primary">MasterStudy</span>  is Education WordPress theme featured by Learning Management System (LMS) for online education. Developed by <span class="text-primary">SystemThemes</span>.</p>
+        <p class="size"><span class="text-primary">MasterStudy</span> is Education WordPress theme featured by Learning Management System (LMS) for online education. Developed by <span class="text-primary">SystemThemes</span>.</p>
         <div>
           <i class="fa-brands fa-twitter me-3"></i>
           <i class="fa-brands fa-instagram me-3"></i>
@@ -12,10 +12,10 @@
       </div>
       <div class="col-3 text-start">
         <h5>Contact</h5>
-        <p class="size text-secondary">USA, California 20, First Avenue, <br> California</p>
-        <span class="size text-secondary">Tel: +1 212 458 300 32</span>
+        <p class="size">USA, California 20, First Avenue, <br> California</p>
+        <span class="size">Tel: +1 212 458 300 32</span>
         <br> 
-        <span class="size text-secondary">Fax: +1 212 375 24 414</span>
+        <span class="size">Fax: +1 212 375 24 414</span>
         <br>
         <span class="size text-secondary">info@masterstudy.com</span>
       </div>
@@ -23,14 +23,14 @@
         <h5>Pages</h5>
         <div class="d-flex">
           <ul class="ps-0">
-            <li class="size text-secondary">Blog</li>
-            <li class="size text-secondary">Home</li>
-            <li class="size text-secondary">Shortcodes</li>
+            <li class="size">Blog</li>
+            <li class="size">Home</li>
+            <li class="size">Shortcodes</li>
           </ul>
           <ul>
-            <li class="size text-secondary">Blog</li>
-            <li class="size text-secondary">Home</li>
-            <li class="size text-secondary">Shortcodes</li>
+            <li class="size">Blog</li>
+            <li class="size">Home</li>
+            <li class="size">Shortcodes</li>
           </ul>
         </div>
       </div>

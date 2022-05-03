@@ -5,7 +5,7 @@
         <h1>Start Investing in You</h1>
         <p>With over 1200 courses in 18 subjects, you're guaranteed to find something that's right for you.</p>
         <div>
-          <button class="btn btn-primary text-uppercase p-2 px-3">Join for free</button>
+          <button class="btn btn-primary text-uppercase p-2 px-4">Join for free</button>
         </div>
         
       </div>

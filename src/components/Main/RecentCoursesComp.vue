@@ -54,7 +54,7 @@
         </div>
       </div>
       <div>
-        <button class="btn btn-primary text-uppercase">Show all</button>
+        <button class="btn btn-primary text-uppercase px-4">Show all</button>
       </div>
     </div>   
   </div>

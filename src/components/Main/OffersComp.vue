@@ -10,7 +10,7 @@
             <div class="col-8 text-start">
               <h3>Became an instructor</h3>
               <p>Teach what you love. Masterstudy gives you the tools to create a course.</p>
-              <button class="btn btn-primary">Start teaching</button>
+              <button class="btn btn-primary text-uppercase hover px-4">Start teaching</button>
             </div>
           </div>
         </div>
@@ -24,7 +24,7 @@
             <div class="col-8 text-start">
               <h3>Setup for business</h3>
               <p>Get unlimited acces to 2,500 of Udemy's top courses for your team.</p>
-              <button class="btn btn-primary">Doing business</button>
+              <button class="btn btn-primary text-uppercase hover px-4">Doing business</button>
             </div>
           </div>
         </div>
@@ -51,5 +51,9 @@ export default {
 
 .btn{
   border-radius: 30px;
+}
+
+.hover:hover{
+  background-color: #4AD7A8;
 }
 </style>

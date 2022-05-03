@@ -5,7 +5,11 @@
         <div class="col-8 bg-white p-5 my-4 text-start">
           <h3>Come as you are</h3>
           <p class="text-secondary">MasterStudy used is an excellent workshop whether you come as a consuelor, advisor, administrator, or faculty member. I am going home empowered. I am looking forward to attending the On Course MasterStudy and the MasterStudy national conference next year and facilitating the use of this excellent retention/student success course at my college</p>
-          <p>Tim Sab <br> General Developer, Stylemix Themes</p>
+          <div class="">
+            <p class="fw-bold">Tim Sab <br> <span class="text-secondary fw-normal">General Developer, Stylemix Themes</span></p>
+            
+          </div>
+          
         </div>
         <div class="col-4 text-start p-0 d-flex align-items-center fs-1 text-white">
           <i class="fa-solid fa-caret-right"></i>
