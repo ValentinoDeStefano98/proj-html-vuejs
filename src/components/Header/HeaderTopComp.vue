@@ -20,15 +20,10 @@
             </fieldset>
           </form>
         </div>
-        <div class="col-6 d-flex align-items-center justify-content-end">
-          <ul class="d-flex menu-list m-0">
-            <li class="me-3">Courses</li>
-            <li class="me-3">Zoom</li>
-            <li class="me-3">Pages</li>
-            <li class="me-3">Bundles</li>
-            <li class="me-3">Course Formats</li>
-            <li class="me-3">Add Course</li>
-            <li class="me-3">Demos</li>
+        <div class="col-6 d-flex align-items-center justify-content-end listContainer">
+          <ul class="d-flex menu-list mt-3 m-0" v-for="(elem, index) in arrayHeaderTop" :key="index">
+            <div class="newContainer" v-if="elem.new == true"><span class="text-uppercase border p-1 m-2 bg-danger text-white">new</span></div>
+            <li class="me-3 lh-1"> {{ elem.name }} </li>
           </ul>
         </div>
         <div class="col-2 text-end">
@@ -47,7 +42,46 @@
 <script>
 export default {
   name: 'HeaderTopComp',
-
+  data() {
+    return {
+      arrayHeaderTop: [{
+            "name": "Courses",
+            "link": "#",
+            "new": false
+        },
+        {
+            "name": "Zoom",
+            "link": "#",
+            "new": true
+        },
+        {
+            "name": "Pages",
+            "link": "#",
+            "new": false
+        },
+        {
+            "name": "Bundles",
+            "link": "#",
+            "new": false
+        },
+        {
+            "name": "Course Formats",
+            "link": "#",
+            "new": false
+        },
+        {
+            "name": "Add Course",
+            "link": "#",
+            "new": true
+        },
+        {
+            "name": "Demos",
+            "link": "#",
+            "new": false
+        },
+        ],
+    }
+  }
 }
 </script>
 
@@ -59,5 +93,14 @@ export default {
 .container{
   width: 90%;
   margin: 0 auto;
+}
+
+.listContainer{
+  position: relative;
+}
+
+.newContainer{
+  position: absolute;
+  top: -30%;
 }
 </style>
