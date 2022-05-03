@@ -53,6 +53,9 @@
           </div>        
         </div>
       </div>
+      <div>
+        <button class="btn btn-primary text-uppercase">Show all</button>
+      </div>
     </div>   
   </div>
 </template>
